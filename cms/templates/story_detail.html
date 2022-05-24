@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>
+    <strong>Posts</strong>
+  </h1>
+
+<div class="block">
+    
+            <div class="box">
+                {{object.title}}
+                
+               
+               
+                <span class="is-small has-text-grey-light">
+                   
+                </span>
+            </div>
+      
+ 
+</div>
+
+<div class="block">
+    
+    <div class="box">
+    
+        
+        {{object.content |safe}}
+       
+        <span class="is-small has-text-grey-light">
+           
+        </span>
+    </div>
+
+
+</div>
+
+{% endblock  %}

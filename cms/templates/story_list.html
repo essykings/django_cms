@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>
+   <strong>Posts</strong>
+</h1>
+<div class="block">
+   {% for post in posts %}
+   <div class="box">
+    {{post.title}}
+      
+      <span class="is-small has-text-grey-light">
+      </span>
+   </div>
+   {% endfor %}
+</div>
+<!-- <div class="block">
+   {% for story in object_list %}
+   <div class="box">
+      <a href="{% url 'story_detail' story.id %}"> {{story.title}}</a>
+      <span class="is-small has-text-grey-light">
+      </span>
+   </div>
+   {% endfor %} -->
+</div>
+{% endblock  %}
